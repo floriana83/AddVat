@@ -1,7 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import { AddVat } from './AddVat.js';
+
 
 function App() {
+  const price =140;
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +20,9 @@ function App() {
         >
           Learn React
         </a>
+        <p>
+          Prezzo {price} + IVA al 22% : <AddVat value= {price} vat = {22} />
+        </p>
       </header>
     </div>
   );
